@@ -10,13 +10,27 @@
 
 <body>
     <script>
-        //---1
-        function getResult(a, b, c) {
-            var result = eval(a + c + b);
-            return result;
+     function getResult(a, b, c) {
+        var res = 0;
+        switch (c) {
+          case "*":
+            res = a * b;
+            break;
+
+          case "+":
+            res = a + b;
+            break;
+
+          case "/":
+            res = a / b;
+            break;
+
+          case "-":
+            res = a - b;
+            break;
         }
-        alert(getResult(-45, 5, "/"));
-      //---
+        return res;
+      }
     </script>
 </body>
 
